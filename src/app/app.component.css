@@ -1,0 +1,15 @@
+.container h2 {
+  text-align: center;
+  margin: 25px auto;
+}
+
+
+.img-coffee-machine {
+  position: absolute;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  bottom: 120px;
+  left: 80px;
+  width: 313px;
+  height: 500px;
+}

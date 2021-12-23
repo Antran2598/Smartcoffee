@@ -1,0 +1,33 @@
+<div class="submit-form">
+  <div *ngIf="!submitted">
+    <div class="form-group">
+      <label for="flowQuatity">flowQuatity</label>
+      <input
+        type="text"
+        class="form-control"
+        id="flowQuatity"
+        required
+        [(ngModel)]="tutorial.flowQuatity"
+        name="flowQuatity"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="flowRate">flowRate</label>
+      <input
+        class="form-control"
+        id="flowRate"
+        required
+        [(ngModel)]="tutorial.flowRate"
+        name="flowRate"
+      />
+    </div>
+
+    <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+  </div>
+
+  <div *ngIf="submitted">
+    <h4>You submitted successfully!</h4>
+    <button class="btn btn-success" (click)="newTutorial()">Add</button>
+  </div>
+</div>
